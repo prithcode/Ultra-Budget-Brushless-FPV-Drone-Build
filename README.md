@@ -1,14 +1,16 @@
 # Ultra-Budget-Brushless-FPV-Drone-Build
 
-A fully documented ultra-budget 1S brushless micro FPV drone build focused on learning UAV electronics, embedded systems, soldering, flight-controller configuration, and troubleshooting. The build uses inexpensive and readily available components so that it can be recreated by others.
+A fully documented ultra-budget 1S brushless micro FPV drone build. I focused on keeping the build cheap and simple while learning how to solder, set up a flight controller, configure Betaflight, and troubleshoot problems. The parts are inexpensive and easy to find, so someone else can recreate the build.
 
 ## Overview
 
-This project involves building a lightweight 1S brushless micro drone from individual components. The goal was to create an affordable platform for learning about brushless motors, electronic speed controllers, flight controllers, radio communication, soldering, and flight-control software.
+I built this lightweight 1S brushless micro drone from individual components. My goal was to make an affordable tiny whoop that I could build and learn from without spending a lot of money.
 
-The drone was designed around the **BETAFPV Matrix 1S 5-in-1 II AIO**, which combines the flight controller, ESC, receiver, and other electronics into a single board. This keeps the build compact and reduces the number of individual components required.
+I used the **BETAFPV Matrix 1S 5-in-1 II AIO**. AIO means "all-in-one," since the flight controller, ESCs, receiver, 5.8GHz analog VTX, and OSD are built into one board. This keeps the build small and cuts down on wiring.
 
-The entire build and configuration process was self-taught, including soldering, hardware assembly, Betaflight configuration, and troubleshooting.
+I used the **solder-required version** of the AIO, so I had to solder the motor and battery connections myself.
+
+The build and configuration were self-taught. I learned the soldering, assembly, Betaflight setup, and troubleshooting as I went.
 
 The drone itself cost **$88.93**, excluding the radio, charger, batteries, and optional equipment.
 
@@ -16,36 +18,36 @@ The drone itself cost **$88.93**, excluding the radio, charger, batteries, and o
 
 ## Components Used
 
-The components were intentionally selected to be simple, affordable, and easy to source so that the build could be recreated by others. The primary drone components were purchased through AliExpress.
+I chose parts that were simple, affordable, and easy to find so that the build could be recreated by others. The primary drone components were purchased through AliExpress.
 
 ### Drone Components
 
-- **Flight Controller & ESC:** BETAFPV Matrix 1S 5-in-1 II AIO — **$54.74**
-- **Frame:** Meteor 75 Pro Frame — **$5.56**
-- **Motors:** 1103 15,000KV Motors ×4 — **$11.40**
-- **Propellers:** 45mm Gemfan Propellers — **$2.99**
-- **Canopy:** YSIDO Micro Canopy — **$3.24**
-- **Camera:** BETAFPV C03 Camera — **$11.00**
+- **Flight Controller & ESC:** BETAFPV Matrix 1S 5-in-1 II AIO, solder-required version, with built-in 5.8GHz analog VTX and OSD, **$54.74**
+- **Frame:** Meteor 75 Pro Frame, **$5.56**
+- **Motors:** 1103 15,000KV Motors ×4, **$11.40**
+- **Propellers:** 45mm Gemfan Propellers, **$2.99**
+- **Canopy:** YSIDO Micro Canopy, **$3.24**
+- **Camera:** BETAFPV C03 Camera, **$11.00**
 
 ### Additional Equipment
 
-- **Radio Controller:** RadioMaster Pocket — **$78.00**
-- **Battery:** Ovonic 1S 450mAh LiPo — **$20.00**
-- **Charger:** ISDT 1S LiPo Charger — **$22.00**
+- **Radio Controller:** RadioMaster Pocket, **$78.00**
+- **Battery:** Ovonic 1S 450mAh LiPo, **$20.00**
+- **Charger:** ISDT 1S LiPo Charger, **$22.00**
 - **Soldering Iron:** **$11.00**
-- **FPV Goggles:** Eachine EV800D — **$114.00**
+- **FPV Goggles:** Eachine EV800D, **$114.00**
 
 ### Optional / Recommended Tools
 
 - **Screw Assortment Pack:** $3.81
 - **Solder Cleaning Ball:** $1.73
 - **Heat Shrink Tubing:** $2.00
-- **NC559ASM Solder Paste:** $4.51
+- **NC559ASM Flux:** $4.51
 - **Desoldering Wire:** $1.51
 - **Third Hands:** $1.39
 - **Cutting Mat:** $1.39
 
-The optional tools were not all required for the build, but several were highly recommended for making assembly and soldering easier.
+The optional tools were not all required for my build, but several were highly recommended for making assembly and soldering easier.
 
 ---
 
@@ -65,6 +67,10 @@ The cost of the drone itself was **$88.93**.
 | BETAFPV C03 Camera | $11.00 |
 | **Total** | **$88.93** |
 
+### Minimum to Fly
+
+**$88.93 drone + $78 radio + $20 battery + $22 charger = $208.93**
+
 ### Complete Setup
 
 Including the radio, battery, charger, soldering iron, optional tools, and FPV goggles, the total cost of the listed equipment is approximately **$350.27**.
@@ -77,21 +83,21 @@ The **$88.93 figure represents the drone itself**, while the additional equipmen
 
 ### 1. Frame Assembly
 
-The Meteor 75 Pro frame was used as the foundation of the build.
+I assembled the Meteor 75 Pro frame first.
 
-The frame was assembled first to provide a lightweight structure for mounting the motors, AIO flight controller, camera, and canopy.
+This gave me a base for mounting the motors, AIO, camera, and canopy.
 
 ### 2. Motor Installation
 
-The motors were positioned on each arm and secured before connecting them to the AIO flight controller.
+I positioned the motors on each arm and secured them before connecting them to the AIO flight controller.
 
-Motor leads were soldered directly to the appropriate motor pads on the Matrix 1S 5-in-1 II AIO.
+I soldered the motor leads directly to the appropriate motor pads on the Matrix 1S 5-in-1 II AIO.
 
-Because the motor connections are small, careful soldering was required to avoid creating solder bridges or damaging nearby components.
+The motor pads are small, so I had to be careful while soldering to avoid solder bridges or damaging nearby components.
 
 ### 3. Soldering
 
-Soldering was one of the main hands-on parts of the build.
+Soldering was one of the main parts of the build.
 
 The primary soldering work consisted of:
 
@@ -99,31 +105,29 @@ The primary soldering work consisted of:
 - Connecting the battery leads
 - Cleaning and checking the soldered connections before powering the drone
 
-The small size of the AIO and motor pads required precision and careful heat control. After soldering, **91% isopropyl alcohol (IPA)** can be used to clean the solder joints and remove flux residue.
+The small AIO pads required careful soldering and heat control. After soldering, I used **91% isopropyl alcohol (IPA)** to clean the solder joints and remove flux residue.
 
 ### 4. AIO Installation
 
-The BETAFPV Matrix 1S 5-in-1 II AIO was installed into the frame.
+I installed the BETAFPV Matrix 1S 5-in-1 II AIO into the frame.
 
-The AIO combines several components into a single board, including the flight controller, ESCs, and integrated ELRS receiver. This significantly reduces wiring and saves space compared with using separate components.
+The AIO combines the flight controller, ESCs, integrated ELRS receiver, 5.8GHz analog VTX, and OSD into one board. ELRS is the radio receiver system, VTX means "video transmitter," and OSD means "on-screen display."
 
-A **smoke stopper is recommended** when powering the AIO for the first time to help detect potential shorts or wiring problems. However, it is not strictly necessary; I was able to complete this step without using one.
+A **smoke stopper is recommended** when powering the AIO for the first time. It can help detect a short or wiring problem before it causes damage. It is not required, though. I was fine without using one.
 
 ### 5. Camera and Canopy Installation
 
-The BETAFPV C03 camera was installed at the front of the drone.
+I installed the BETAFPV C03 camera at the front of the drone.
 
-The YSIDO Micro Canopy was then installed to protect and hold the camera in place.
-
-The drone is currently being tested in **line-of-sight (LOS)** flight, with FPV goggles available for future FPV flying.
+I then installed the YSIDO Micro Canopy to protect and hold the camera in place.
 
 ### 6. Final Assembly
 
-After the electronics were installed, the remaining hardware was checked and the drone was assembled into its final configuration.
+After installing the electronics, I checked the remaining hardware and assembled the drone into its final configuration.
 
 The 1S 450mAh battery provides power to the completed system.
 
-A final inspection was performed before moving on to software configuration and testing.
+I did a final inspection before moving on to software configuration and testing.
 
 ---
 
@@ -131,39 +135,35 @@ A final inspection was performed before moving on to software configuration and 
 
 ### 1. Betaflight Setup
 
-Betaflight was used to configure the flight controller and prepare the drone for flight.
+I used Betaflight to configure the flight controller and prepare the drone for flight.
 
-The configuration process involved setting up the flight controller, receiver, motors, flight modes, and other parameters required for safe operation.
+I configured the flight controller, receiver, motors, flight modes, and other settings needed for the build.
 
-A significant portion of the project involved learning how the different Betaflight settings affected the behavior of the drone.
+I also spent a lot of time learning what the different Betaflight settings actually did and how they affected the drone.
 
 ### 2. ELRS Receiver Setup
 
-The Matrix 1S 5-in-1 II AIO includes an integrated ELRS receiver.
+The Matrix 1S 5-in-1 II AIO has a built-in ELRS receiver.
 
-The receiver was configured to communicate with the RadioMaster Pocket.
-
-The radio system provides the control link between the pilot and the flight controller while keeping the electronics compact.
+I configured the receiver to communicate with the RadioMaster Pocket.
 
 ### 3. Motor Configuration
 
-The four motors were configured through Betaflight.
+I configured the four motors through Betaflight.
 
-Motor order and direction were checked to ensure that each motor corresponded to the correct position on the flight controller.
+I checked the motor order and direction to make sure each motor matched its correct position on the flight controller.
 
-Motor testing was performed without propellers installed to reduce the risk of accidental movement during configuration.
+I tested the motors without propellers installed during configuration.
 
 ### 4. Flight Modes
 
-Flight modes were configured in Betaflight according to the desired control setup.
-
-The configuration allows the drone to be tested and flown while providing the appropriate flight-control behavior for the build.
+I configured the flight modes in Betaflight for the way I wanted to fly the drone.
 
 ### 5. Failsafe and Safety Configuration
 
-Failsafe settings were configured to help prevent the drone from continuing to operate if the radio connection is lost.
+I configured the failsafe settings to help prevent the drone from continuing to operate if the radio connection is lost.
 
-Safety checks were also performed during configuration and testing.
+I also performed safety checks during configuration and testing.
 
 ---
 
@@ -171,72 +171,59 @@ Safety checks were also performed during configuration and testing.
 
 ### 1. Initial Hardware Testing
 
-Initial testing was performed after completing the soldering and assembly.
+After finishing the soldering and assembly, I tested the electronics.
 
-The electronics were checked to verify that the AIO, motors, receiver, and other connected components were functioning correctly.
+I checked the AIO, motors, receiver, and other connected components to make sure everything was working.
 
-Motor testing was performed without propellers installed before attempting flight.
+I tested the motors without propellers installed before attempting to fly.
 
 ### 2. LOS Testing
 
-The first stage of flight testing is being performed using **line-of-sight (LOS)** flight.
+I am currently testing the drone using **line-of-sight (LOS)** flight. LOS means flying the drone while directly watching it instead of using FPV goggles.
 
-This provides a way to verify the drone's basic flight characteristics before transitioning to FPV.
-
-LOS testing also provides an opportunity to identify configuration or hardware problems without relying on the FPV video system.
+This lets me test the basic flight characteristics before moving to FPV.
 
 ### 3. FPV Testing
 
-The BETAFPV C03 camera and analog video system are ready for FPV operation.
+The BETAFPV C03 camera connects to the AIO's built-in **5.8GHz analog VTX**. The VTX sends the camera's video signal to the Eachine EV800D goggles.
 
-The Eachine EV800D goggles can be connected to the drone's analog video system when transitioning from LOS to FPV flight.
+The AIO also has a built-in **OSD**, which can display flight information over the camera feed.
 
-FPV testing will be documented separately after it has been completed.
+I have the FPV equipment available, but I am currently flying LOS.
 
 ---
 
 ## Troubleshooting & Optimization
 
-This section documents the problems encountered during the build and the solutions used to resolve them.
+### Problem / What I Did
 
-### Problems Encountered
-
-*To be documented as the build is tested.*
-
-### Solutions
-
-*To be documented alongside each problem.*
-
-### Optimization
-
-*Betaflight configuration, flight performance changes, and other optimizations will be documented here.*
+[ADD: my problems and fixes]
 
 ---
 
 ## Key Takeaways
 
-This build provided hands-on experience with several areas of UAV and electrical engineering.
+This build taught me a lot about building and setting up a small brushless drone.
 
-- **Soldering:** Working with small electronics pads and motor connections required precision and careful soldering technique.
-- **Brushless Motors:** Installing and configuring four high-KV brushless motors provided practical experience with small-scale brushless propulsion systems.
-- **Flight Controllers:** The AIO introduced the process of configuring a flight controller and integrated ESC system.
-- **Embedded Systems:** Betaflight provided practical experience configuring an embedded flight-control system.
-- **Radio Communication:** Setting up the integrated ELRS receiver and RadioMaster Pocket provided experience with modern RC communication systems.
-- **Troubleshooting:** Diagnosing hardware and configuration problems was an important part of the project.
-- **System Integration:** The project required multiple independent components to work together as one functioning system.
+- **Soldering:** I learned how to solder small motor and battery connections.
+- **Brushless Motors:** I learned how the four motors connect to and are controlled by the AIO.
+- **Flight Controller:** I learned how to set up and configure the flight controller in Betaflight.
+- **ELRS:** I learned how to set up the built-in receiver and connect it to my RadioMaster Pocket.
+- **FPV Video:** I learned how the camera, analog VTX, OSD, and goggles work together.
+- **Troubleshooting:** I had to diagnose and fix several problems during the build and configuration.
 
 ---
 
 ## Future Improvements
 
-Possible future improvements to the project include:
+Possible future improvements include:
 
 - Transitioning from LOS to FPV flight
 - Further tuning the Betaflight configuration
 - Optimizing flight characteristics
 - Testing different propeller configurations
 - Experimenting with different 1S batteries
-- Improving the documentation with flight data and test results
+- Adding flight data and test results to the documentation
 - Building a larger and more advanced FPV drone
 
 ---
@@ -245,6 +232,4 @@ Possible future improvements to the project include:
 
 The completed project is an **$88.93 1S brushless micro drone** built around the BETAFPV Matrix 1S 5-in-1 II AIO.
 
-The project demonstrates how a functional brushless drone can be built at relatively low cost while providing hands-on experience with soldering, electronics, embedded systems, radio communication, flight controllers, and software configuration.
-
-The build is designed to be reproducible, with inexpensive components and a straightforward architecture that makes it suitable as an introduction to FPV drone electronics and UAV engineering.
+I kept the build focused on using inexpensive parts and a simple layout. The result is a small brushless drone that I can use to learn more about soldering, flight controllers, radio systems, FPV video, and Betaflight.
