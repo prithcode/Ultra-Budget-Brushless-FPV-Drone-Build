@@ -1,6 +1,5 @@
 # Ultra-Budget-Brushless-FPV-Drone-Build
 
-
 A fully documented ultra-budget 1S brushless micro FPV drone build focused on learning UAV electronics, embedded systems, soldering, flight-controller configuration, and troubleshooting. The build uses inexpensive and readily available components so that it can be recreated by others.
 
 ## Overview
@@ -82,11 +81,7 @@ The Meteor 75 Pro frame was used as the foundation of the build.
 
 The frame was assembled first to provide a lightweight structure for mounting the motors, AIO flight controller, camera, and canopy.
 
-The compact frame was selected to keep the overall weight low while providing enough space for the electronics required for the build.
-
 ### 2. Motor Installation
-
-Four 1103 15,000KV brushless motors were installed onto the frame.
 
 The motors were positioned on each arm and secured before connecting them to the AIO flight controller.
 
@@ -102,10 +97,9 @@ The primary soldering work consisted of:
 
 - Soldering the four motor leads
 - Connecting the battery leads
-- Inspecting solder joints for shorts and weak connections
 - Cleaning and checking the soldered connections before powering the drone
 
-The small size of the AIO and motor pads required precision and careful heat control.
+The small size of the AIO and motor pads required precision and careful heat control. After soldering, **91% isopropyl alcohol (IPA)** can be used to clean the solder joints and remove flux residue.
 
 ### 4. AIO Installation
 
@@ -113,15 +107,13 @@ The BETAFPV Matrix 1S 5-in-1 II AIO was installed into the frame.
 
 The AIO combines several components into a single board, including the flight controller, ESCs, and integrated ELRS receiver. This significantly reduces wiring and saves space compared with using separate components.
 
-After installation, the board was checked to make sure there were no obvious shorts or damaged connections before applying power.
+A **smoke stopper is recommended** when powering the AIO for the first time to help detect potential shorts or wiring problems. However, it is not strictly necessary; I was able to complete this step without using one.
 
 ### 5. Camera and Canopy Installation
 
 The BETAFPV C03 camera was installed at the front of the drone.
 
 The YSIDO Micro Canopy was then installed to protect and hold the camera in place.
-
-The camera connects directly into the AIO, making the video system relatively simple to install. The system is also compatible with analog FPV goggles.
 
 The drone is currently being tested in **line-of-sight (LOS)** flight, with FPV goggles available for future FPV flying.
 
