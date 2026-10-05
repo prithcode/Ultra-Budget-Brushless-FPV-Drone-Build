@@ -139,13 +139,13 @@ I used Betaflight to configure the flight controller and prepare the drone for f
 
 I configured the flight controller, receiver, motors, flight modes, and other settings needed for the build.
 
-I also spent a lot of time learning what the different Betaflight settings actually did and how they affected the drone.
+I also spent a lot of time messing around with different Beta flight settings like PID tuning(would not recomend if ur a beginner !!!!)
 
 ### 2. ELRS Receiver Setup
 
 The Matrix 1S 5-in-1 II AIO has a built-in ELRS receiver.
 
-I configured the receiver to communicate with the RadioMaster Pocket.
+I configured the receiver to communicate with the RadioMaster Pocket.  Use this video: https://www.youtube.com/watch?v=zuUDaiM3TKg
 
 ### 3. Motor Configuration
 
@@ -161,9 +161,7 @@ I configured the flight modes in Betaflight for the way I wanted to fly the dron
 
 ### 5. Failsafe and Safety Configuration
 
-I configured the failsafe settings to help prevent the drone from continuing to operate if the radio connection is lost.
-
-I also performed safety checks during configuration and testing.
+I also performed safety checks during configuration and testing like removing props and checking for a burning smell just incase something had been bridged. 
 
 ---
 
@@ -197,8 +195,17 @@ I have the FPV equipment available, but I am currently flying LOS.
 
 ### Problem / What I Did
 
-[ADD: my problems and fixes]
+Make sure you buy the right props and look at their direction...
 
+I spent 2 hours messing around with PID tuning, throttle limits, and motor direction. Just to find out I had a left and a right prop....
+
+I started messing around with the PID settings in Betaflight to see if I could make the drone feel more responsive. I changed a few values without fully understanding how they affected the flight.
+
+After testing the changes, the drone started oscillating and felt unstable in the air. It was clear that my settings weren't working well with the build.
+
+Next time, I would save a backup of my working configuration and change one setting at a time. 
+
+Use this playlist if you want to get into advanced PID tuning: https://www.youtube.com/watch?v=4sjXJ5HoU_c&list=PLwoDb7WF6c8ldO8tz0IUi9FNcJdvE2Mhe
 ---
 
 ## Key Takeaways
